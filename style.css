@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Permanent+Marker&family=Poppins:wght@100;200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+    color: #ffffff;
+    background: #1d2b3a;
+}
+.inputBox{
+    position: relative;
+    width: 450px;
+}
+.inputBox input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: #ffffff;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.inputBox textarea{
+    width: 100%;
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: #ffffff;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #ffffff40;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span,
+.inputBox textarea:focus ~ span,
+.inputBox textarea:focus ~ span
+{
+    color: #00ffff;
+    transform: translateX(10px)translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    /* border-bottom: 1px solid #00ffff; */
+    border-left:1px solid #00ffff;
+    border-right:1px solid #00ffff;
+    letter-spacing: 0.2em;
+}
+.inputBox input:valid,
+.inputBox input:focus{
+    border: 1px solid #00ffff;
+}
+.inputBox:nth-child(2) input:focus ~ span{
+    background: #00ffff;
+    color: #1d2b3a;
+    border-radius: 2px;
+    line-height: 2em;
+}
+button{
+    cursor: pointer;
+    padding: 10px 30px;
+    background: #00ffff;
+    border: 0;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    float: right;
+    margin-left: 9rem;
+    transition: 0.5s;
+}
+button:hover{
+    transform: scale(1.1);
+    background: #00ffffb2;
+}
