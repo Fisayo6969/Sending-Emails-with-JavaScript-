@@ -5,22 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>form float</title>
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <title>Send Emails With JavaScript</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("FYo7PSNfSqrRDKSdq");
+        })();
+    </script>
+    <!-- servce id:service_tbeowy5 -->
+
 </head>
 <body>
     <h3>Contact Me</h3>
         <div class="inputBox">
-            <input type="text" required="required">
+            <input type="text" required="required" id="fullName">
             <span>Full Name</span>
         </div>
         <div class="inputBox">
-            <input type="" required="required" >
+            <input type="text" required="required" id="email_id">
             <span>Email</span>
         </div>
     <div class="inputBox">
-        <Textarea></Textarea>
+        <Textarea id="message"></Textarea>
         <span>Message</span>
     </div>
-    <button>Send</button>
+    <button onclick="SendMail()">Send</button>
+    <script src="script.js"></script>
 </body>
 </html>

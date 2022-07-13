@@ -15,8 +15,15 @@ body{
     color: #ffffff;
     background: #1d2b3a;
 }
+h3{
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.2rem;
+}
 .inputBox{
     position: relative;
+    max-width: 100%;
     width: 450px;
 }
 .inputBox input{
@@ -62,8 +69,8 @@ body{
     padding: 0 10px;
     background: #1d2b3a;
     /* border-bottom: 1px solid #00ffff; */
-    border-left:1px solid #00ffff;
-    border-right:1px solid #00ffff;
+    border-left:5px solid #00ffff;
+    border-right:5px solid #00ffff;
     letter-spacing: 0.2em;
 }
 .inputBox input:valid,
@@ -84,10 +91,10 @@ button{
     border-radius: 0.2rem;
     font-size: 1rem;
     float: right;
-    margin-left: 9rem;
+    margin-left: 5rem;
     transition: 0.5s;
 }
 button:hover{
     transform: scale(1.1);
-    background: #00ffffb2;
+    background: #00ffffc9;
 }
